@@ -32,6 +32,28 @@
         "id": "2e176102-c819-4c80-9be8-7fac5d50bf30",
         "version": "1.0.0.0"
       }
+    ],
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Mail.Read"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "User.Sites.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Site.FullControl.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Teams.ReadBasic.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Sites.ReadWrite.All"
+      }
     ]
   },
   "paths": {
