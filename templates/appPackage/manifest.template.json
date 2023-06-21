@@ -1,7 +1,7 @@
 {
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
     "manifestVersion": "1.11",
-    "packageName": "helloworld",
+    "packageName": "Online Document Editor SpFx",
     "id": "{{state.fx-resource-appstudio.teamsAppId}}",
     "version": "1.0.0",
     "developer": {
@@ -11,12 +11,12 @@
         "termsOfUseUrl": "https://www.microsoft.com/en-us/servicesagreement"
     },
     "name": {
-        "short": "{{config.manifest.appName.short}}",
-        "full": "{{config.manifest.appName.full}}"
+        "short": "Online Document Editor SpFx",
+        "full": "Online Document Editor SpFx"
     },
     "description": {
-        "short": "helloworld",
-        "full": "helloworld"
+        "short": "Online Document Editor SpFx",
+        "full": "Online Document Editor SpFx"
     },
     "icons": {
         "outline": "resources/outline.png",
@@ -25,9 +25,9 @@
     "accentColor": "#004578",
     "staticTabs": [
         {
-            "entityId": "7050129f-10d8-4122-8a1d-1c526a04b6c3",
-            "name": "helloworld",
-            "contentUrl": "{{^config.isLocalDebug}}https://{teamSiteDomain}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest=/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId=7050129f-10d8-4122-8a1d-1c526a04b6c3%26forceLocale={locale}{{/config.isLocalDebug}}{{#config.isLocalDebug}}https://{teamSiteDomain}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/TeamsWorkBench.aspx%3FcomponentId=7050129f-10d8-4122-8a1d-1c526a04b6c3%26teams%26personal%26forceLocale={locale}%26loadSPFX%3Dtrue%26debugManifestsFile%3Dhttps%3A%2F%2Flocalhost%3A4321%2Ftemp%2Fmanifests.js{{/config.isLocalDebug}}",
+            "entityId": "690953ca-05db-433a-9841-39baec8c8c73",
+            "name": "Meetings",
+            "contentUrl": "{{^config.isLocalDebug}}https://{teamSiteDomain}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest=/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId=690953ca-05db-433a-9841-39baec8c8c73%26forceLocale={locale}{{/config.isLocalDebug}}{{#config.isLocalDebug}}https://{teamSiteDomain}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/TeamsWorkBench.aspx%3FcomponentId=690953ca-05db-433a-9841-39baec8c8c73%26teams%26personal%26forceLocale={locale}%26loadSPFX%3Dtrue%26debugManifestsFile%3Dhttps%3A%2F%2Flocalhost%3A4321%2Ftemp%2Fmanifests.js{{/config.isLocalDebug}}",
             "websiteUrl": "https://products.office.com/en-us/sharepoint/collaboration",
             "scopes": [
                 "personal"
@@ -36,7 +36,7 @@
     ],
     "configurableTabs": [
         {
-            "configurationUrl": "{{^config.isLocalDebug}}https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3FopenPropertyPane=true%26teams%26componentId=7050129f-10d8-4122-8a1d-1c526a04b6c3%26forceLocale={locale}{{/config.isLocalDebug}}{{#config.isLocalDebug}}https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/TeamsWorkBench.aspx%3FcomponentId=7050129f-10d8-4122-8a1d-1c526a04b6c3%26openPropertyPane=true%26teams%26forceLocale={locale}%26loadSPFX%3Dtrue%26debugManifestsFile%3Dhttps%3A%2F%2Flocalhost%3A4321%2Ftemp%2Fmanifests.js{{/config.isLocalDebug}}",
+            "configurationUrl": "{{^config.isLocalDebug}}https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3FopenPropertyPane=true%26teams%26componentId=690953ca-05db-433a-9841-39baec8c8c73%26forceLocale={locale}{{/config.isLocalDebug}}{{#config.isLocalDebug}}https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/TeamsWorkBench.aspx%3FcomponentId=690953ca-05db-433a-9841-39baec8c8c73%26openPropertyPane=true%26teams%26forceLocale={locale}%26loadSPFX%3Dtrue%26debugManifestsFile%3Dhttps%3A%2F%2Flocalhost%3A4321%2Ftemp%2Fmanifests.js{{/config.isLocalDebug}}",
             "canUpdateConfiguration": true,
             "scopes": [
                 "team"

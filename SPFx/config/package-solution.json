@@ -1,8 +1,8 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "hello-world-app-client-side-solution",
-    "id": "9a5a0421-8ab8-4fbe-b2c8-1d3bb024a443",
+    "name": "Online Document Editor SpFx",
+    "id": "26254ec5-5b95-4d51-8261-bdee40f688b6",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
@@ -16,10 +16,10 @@
     },
     "metadata": {
       "shortDescription": {
-        "default": "HelloWorldApp description"
+        "default": "Online Document Editor SpFx"
       },
       "longDescription": {
-        "default": "HelloWorldApp description"
+        "default": "Online Document Editor SpFx"
       },
       "screenshotPaths": [],
       "videoUrl": "",
@@ -27,7 +27,7 @@
     },
     "features": [
       {
-        "title": "hello-world-app Feature",
+        "title": "Online Document Editor SpFx Feature",
         "description": "The feature that activates elements of the hello-world-app solution.",
         "id": "2e176102-c819-4c80-9be8-7fac5d50bf30",
         "version": "1.0.0.0"
@@ -57,6 +57,6 @@
     ]
   },
   "paths": {
-    "zippedPackage": "solution/hello-world-app.sppkg"
+    "zippedPackage": "solution/online-document-editor-spfx.sppkg"
   }
 }

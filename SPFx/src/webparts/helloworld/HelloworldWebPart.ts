@@ -11,7 +11,7 @@ import { IReadonlyTheme } from '@microsoft/sp-component-base';
 import * as strings from 'HelloworldWebPartStrings';
 import Helloworld from './components/Helloworld';
 import { IHelloworldProps } from './components/IHelloworldProps';
-import {SPComponentLoader} from '@microsoft/sp-loader';
+import { SPComponentLoader } from '@microsoft/sp-loader';
 
 export interface IHelloworldWebPartProps {
   description: string;
@@ -26,10 +26,21 @@ export default class HelloworldWebPart extends BaseClientSideWebPart<IHelloworld
     this._environmentMessage = this._getEnvironmentMessage();
     SPComponentLoader.loadCss('https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css');
     SPComponentLoader.loadScript('https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js', {
-            globalExportsName: 'bootstrap',
-        }).then(($: any) => {
-            console.log('$', $);
-        });
+      globalExportsName: 'bootstrap',
+    }).then(($: any) => {
+    });
+    SPComponentLoader.loadScript('https://unpkg.com/@microsoft/teams-js@1.3.7/dist/MicrosoftTeams.min.js', {
+      globalExportsName: 'teams',
+    }).then(($: any) => {
+    });
+
+    // microsoftTeams.initialize();
+    // var authTokenRequest = {
+    //   successCallback: function (result: any) { console.log("Success: " + result); },
+    //   failureCallback: function (error: any) { console.log("Error getting token: " + error); }
+    // };
+    // microsoftTeams.authentication.getAuthToken(authTokenRequest);
+
     return super.onInit();
   }
 
